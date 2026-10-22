@@ -282,10 +282,6 @@ def generate_banner():
     cp_sq = prepare_square_logo(CP2EJR_PATH, canvas_size=230, logo_max_w=175, logo_max_h=120)
     mby_sq = prepare_square_logo(MBY_PATH, canvas_size=230, logo_max_w=175, logo_max_h=125)
 
-    # Mini-logos para o cardzinho inferior dentro do GIF
-    cp_mini = prepare_square_logo(CP2EJR_PATH, canvas_size=24, logo_max_w=22, logo_max_h=16)
-    mby_mini = prepare_square_logo(MBY_PATH, canvas_size=24, logo_max_w=22, logo_max_h=16)
-
     # Cria 24 camadas de profundidade para extrusão 3D sólida e contínua de cada logo
     cp_edges = []
     mby_edges = []
@@ -402,7 +398,7 @@ def generate_banner():
         center_x = WIDTH // 2
 
         # Tag superior estilo terminal / sci-fi
-        top_tag = "< SOFTWARE ENGINEERING @ INATEL • GAME DEV • 3D />"
+        top_tag = "< SOFTWARE ENGINEERING • WEB DEVELOPER • FRONT-END • GAME DEV />"
         tb = draw.textbbox((0, 0), top_tag, font=font_mono_top)
         tw = tb[2] - tb[0]
         draw.text((center_x - tw // 2, 58), top_tag, font=font_mono_top, fill=MBY_CYAN)
@@ -462,43 +458,34 @@ def generate_banner():
                 fill=cursor_col
             )
 
-        # Badges inferiores com mini-logos ([logo] CP2eJr • [logo] Co-Founder @ Made By You)
-        sub_y = 204
-        pill_w, pill_h = 446, 32
+        # Badge inferior centralizado (Co-Founder • Made By You)
+        badge_left = "Co-Founder"
+        badge_sep = "  •  "
+        badge_right = "Made By You"
+        full_badge = badge_left + badge_sep + badge_right
+        fb_box = draw.textbbox((0, 0), full_badge, font=font_badge)
+        fb_w = fb_box[2] - fb_box[0]
+
+        sub_y = 205
+        pill_w, pill_h = fb_w + 48, 30
         px1 = center_x - pill_w // 2
         py1 = sub_y
         draw.rounded_rectangle(
             (px1, py1, px1 + pill_w, py1 + pill_h),
-            radius=16,
+            radius=15,
             fill=CARD_BG,
             outline=BORDER_COL,
             width=1
         )
 
-        badge_left = "CP2eJr"
-        badge_sep = "   •   "
-        badge_right = "Co-Founder @ Made By You"
+        bx = center_x - fb_w // 2
+        by = py1 + 8
 
+        draw.text((bx, by), badge_left, font=font_badge, fill=CP_ORANGE)
         b1_w = draw.textbbox((0, 0), badge_left, font=font_badge)[2]
-        sep_w = draw.textbbox((0, 0), badge_sep, font=font_badge)[2]
-        b2_w = draw.textbbox((0, 0), badge_right, font=font_badge)[2]
-        logo_slot = 26
-
-        total_inner_w = logo_slot + b1_w + sep_w + logo_slot + b2_w
-        bx = center_x - total_inner_w // 2
-        by = py1 + 9
-
-        # Mini-logo CP2eJr + texto CP2eJr
-        frame.alpha_composite(cp_mini, (bx, py1 + 4))
-        draw.text((bx + logo_slot, by), badge_left, font=font_badge, fill=CP_ORANGE)
-
-        # Separador
-        draw.text((bx + logo_slot + b1_w, by), badge_sep, font=font_badge, fill=TEXT_MUTED)
-
-        # Mini-logo MBY + texto Co-Founder @ Made By You
-        mby_start_x = bx + logo_slot + b1_w + sep_w
-        frame.alpha_composite(mby_mini, (mby_start_x, py1 + 4))
-        draw.text((mby_start_x + logo_slot, by), badge_right, font=font_badge, fill=MBY_CYAN)
+        draw.text((bx + b1_w, by), badge_sep, font=font_badge, fill=TEXT_MUTED)
+        b2_w = draw.textbbox((0, 0), badge_left + badge_sep, font=font_badge)[2]
+        draw.text((bx + b2_w, by), badge_right, font=font_badge, fill=MBY_CYAN)
 
         # Converte para RGB sobre fundo exato #0d1117
         rgb_frame = frame.convert("RGB")
