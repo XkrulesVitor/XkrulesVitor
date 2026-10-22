@@ -5,10 +5,19 @@
   <br/><br/>
 
   <p align="center">
-    <img src="./assets/badge-inatel.svg" alt="Inatel - Software Engineering" />
-    <img src="./assets/badge-mby.svg" alt="Made By You - Co-Founder" />
-    <img src="./assets/badge-cp2ejr.svg" alt="CP2eJr - Member" />
-    <img src="./assets/badge-focus.svg" alt="Focus - Software, Games & 3D" />
+    <a href="https://inatel.br/" target="_blank">
+      <img src="./assets/badge-inatel.png" height="32" alt="Inatel - Software Engineering" />
+    </a>
+    &nbsp;
+    <a href="https://www.instagram.com/use.mby/" target="_blank">
+      <img src="./assets/badge-mby.png" height="32" alt="Made By You - Co-Founder" />
+    </a>
+    &nbsp;
+    <a href="https://cp2ejr.com.br/" target="_blank">
+      <img src="./assets/badge-cp2ejr.png" height="32" alt="CP2eJr - Coordenador" />
+    </a>
+    &nbsp;
+    <img src="./assets/badge-focus.png" height="32" alt="Focus - Front-End, Software, Games & 3D" />
   </p>
 
 </div>
@@ -20,27 +29,25 @@
     <td width="50%" valign="top">
       <h4 align="center">Português</h4>
       <p>
-        Olá! Eu sou o <b>Vitor Hugo Felipe Noronha</b> (também conhecido como <b><code>XKrules</code></b>).
+        Olá! Eu sou o <b>Vitor Hugo Felipe Noronha</b> (<b><code>XKrules</code></b>), Desenvolvedor Front-End e graduando em <b>Engenharia de Software</b> no <a href="https://inatel.br/" target="_blank"><b>Inatel</b></a>.
       </p>
       <ul>
-        <li>Graduando em <b>Engenharia de Software</b> no <b>Inatel</b> (<i>Instituto Nacional de Telecomunicações</i>).</li>
-        <li><b>Co-Fundador da Made By You</b>, transformando ideias criativas em produtos reais.</li>
-        <li>Membro ativo da <b>CP2eJr</b>, desenvolvendo soluções e evoluindo em equipe.</li>
-        <li>Focado em <b>Desenvolvimento de Software</b>, <b>Criação de Games</b> e <b>Modelagem 3D</b>.</li>
-        <li>Sempre aberto para trocar ideias sobre arquitetura de software, engines de jogos, arte 3D e novos projetos.</li>
+        <li>Construo interfaces modernas e responsivas que chegam ao usuário final, resolvendo o caminho completo do requisito à entrega com <b>React.js</b>, <b>Next.js</b> e <b>TypeScript</b>, apoiado por uma base sólida em <b>C++</b>, <b>C</b>, <b>Java</b> e <b>Python</b>.</li>
+        <li>Atuo como <b>Coordenador de Pesquisa e Desenvolvimento (P&amp;D)</b> e Gerente de Projetos na <a href="https://cp2ejr.com.br/" target="_blank"><b>CP2eJr</b></a>, onde lidero o ciclo de P&amp;D e conduzi o desenvolvimento da plataforma web/app <i>CP2eJR - Corporative</i>.</li>
+        <li>Sou <b>Co-Fundador da <a href="https://www.instagram.com/use.mby/" target="_blank">Made By You</a></b>, transformando conceitos criativos em produtos digitais reais.</li>
+        <li>Pesquisador de Iniciação Científica no <a href="https://inatel.br/" target="_blank"><b>Inatel</b></a> em Modelagem Computacional e Manufatura Aditiva 3D, Técnico em Eletrônica pela ETE FMC e desenvolvedor de jogos em <b>GML (GameMaker)</b> e <b>Construct 3</b> (premiado com <i>Melhor Visual</i> na Game Jam Cubio).</li>
       </ul>
     </td>
     <td width="50%" valign="top">
       <h4 align="center">English</h4>
       <p>
-        Hi there! I'm <b>Vitor Hugo Felipe Noronha</b> (also known as <b><code>XKrules</code></b>).
+        Hi! I'm <b>Vitor Hugo Felipe Noronha</b> (<b><code>XKrules</code></b>), a Front-End Developer and <b>Software Engineering</b> undergraduate at <a href="https://inatel.br/" target="_blank"><b>Inatel</b></a>.
       </p>
       <ul>
-        <li><b>Software Engineering</b> undergraduate at <b>Inatel</b> (<i>National Institute of Telecommunications</i>).</li>
-        <li><b>Co-Founder at Made By You</b>, turning creative concepts into real-world products.</li>
-        <li>Active member at <b>CP2eJr</b>, building impactful solutions and growing through teamwork.</li>
-        <li>Focused on <b>Software Development</b>, <b>Game Development</b>, and <b>3D Modeling</b>.</li>
-        <li>Always open to talk about software architecture, game engines, 3D art, and new collaborations.</li>
+        <li>I build modern, responsive interfaces that reach the end user — owning the full path from requirement to delivery with <b>React.js</b>, <b>Next.js</b>, and <b>TypeScript</b>, backed by a strong algorithmic foundation in <b>C++</b>, <b>C</b>, <b>Java</b>, and <b>Python</b>.</li>
+        <li>I serve as <b>Research &amp; Development (R&amp;D) Coordinator</b> and Project Manager at <a href="https://cp2ejr.com.br/" target="_blank"><b>CP2eJr</b></a>, leading the R&amp;D cycle and spearheading the development of the <i>CP2eJR - Corporative</i> web/app platform.</li>
+        <li><b>Co-Founder at <a href="https://www.instagram.com/use.mby/" target="_blank">Made By You</a></b>, turning creative concepts into real-world digital products.</li>
+        <li>Undergraduate Researcher at <a href="https://inatel.br/" target="_blank"><b>Inatel</b></a> in Computational Modeling and 3D Additive Manufacturing, certified Electronics Technician (ETE FMC), and game developer in <b>GML (GameMaker)</b> and <b>Construct 3</b> (winner of the <i>Best Visuals</i> award at the Cubio Game Jam).</li>
       </ul>
     </td>
   </tr>
@@ -49,14 +56,14 @@
 <br/>
 
 <div align="center">
-  <img src="./assets/tech-stack.svg" alt="Tech Stack & Tools" width="88%" />
+  <img src="./assets/tech-stack.png" alt="Tech Stack & Tools" width="92%" />
 </div>
 
 <br/>
 
 <div align="center">
-  <img height="175em" src="https://github-readme-stats.vercel.app/api?username=XkrulesVitor&show_icons=true&count_private=true&include_all_commits=true&bg_color=0d1117&title_color=0088ff&icon_color=f79c1d&text_color=f0f6fc&border_color=30363d&hide_border=false" alt="GitHub Stats" />
-  <img height="175em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=XkrulesVitor&layout=compact&langs_count=8&count_private=true&bg_color=0d1117&title_color=f79c1d&text_color=f0f6fc&border_color=30363d&hide_border=false" alt="Top Languages" />
+  <img height="175em" src="./assets/github-stats.svg" alt="Vitor Hugo Noronha GitHub Stats" />
+  <img height="175em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=XkrulesVitor&layout=compact&langs_count=8&count_private=true&bg_color=0d1117&title_color=f79c1d&text_color=f0f6fc&border_color=30363d&hide_border=false" alt="Most Used Languages" />
 </div>
 
 <div align="center">
@@ -75,15 +82,15 @@
 
 <div align="center">
   <a href="https://www.linkedin.com/in/vitor-noronha" target="_blank">
-    <img src="./assets/btn-linkedin.svg" alt="LinkedIn - vitor-noronha" />
+    <img src="./assets/btn-linkedin.png" height="32" alt="LinkedIn - vitor-noronha" />
   </a>
   &nbsp;
   <a href="mailto:vitorhugo.noronha15@gmail.com">
-    <img src="./assets/btn-email.svg" alt="E-mail - vitorhugo.noronha15@gmail.com" />
+    <img src="./assets/btn-email.png" height="32" alt="E-mail - vitorhugo.noronha15@gmail.com" />
   </a>
   &nbsp;
   <a href="https://github.com/XkrulesVitor" target="_blank">
-    <img src="./assets/btn-github.svg" alt="GitHub - XkrulesVitor" />
+    <img src="./assets/btn-github.png" height="32" alt="GitHub - XkrulesVitor" />
   </a>
 </div>
 
