@@ -18,9 +18,9 @@ def process_svg_file(svg_path):
 
     start_str, end_str = m_date.group(1), m_date.group(2)
     start_date = datetime.date.fromisoformat(start_str)
-    target_start = datetime.date(2026, 1, 1)
+    target_start = datetime.date(2026, 2, 1)
 
-    # Se o gráfico original começa em 2025, filtramos as semanas de 2025 do tabuleiro 3D
+    # Se o gráfico original começa antes de 2026-02-01, filtramos as semanas anteriores do tabuleiro 3D
     if start_date < target_start:
         board_match = re.search(
             r'(<rect x="0" y="0" width="1280" height="850"[^>]*></rect><g>)(.*?</g>)(</g><g transform="translate\()',
@@ -33,7 +33,7 @@ def process_svg_file(svg_path):
             cells = list(cell_pattern.finditer(cells_html))
 
             days_diff = (target_start - start_date).days
-            weeks_to_skip = days_diff // 7  # 10 semanas completas de 2025
+            weeks_to_skip = days_diff // 7  # 15 semanas completas até 01/02/2026
 
             kept_cells = []
             for idx, m in enumerate(cells):
@@ -60,7 +60,7 @@ def process_svg_file(svg_path):
 
         s = re.sub(
             r"\d{4}-\d{2}-\d{2}\s*/\s*\d{4}-\d{2}-\d{2}",
-            f"2026-01-01 / {end_str}",
+            f"2026-02-01 / {end_str}",
             s
         )
 
