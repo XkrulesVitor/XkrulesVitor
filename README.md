@@ -62,17 +62,6 @@
 <br/>
 
 <div align="center">
-  <img height="175em" src="./assets/github-stats.svg" alt="Vitor Hugo Noronha GitHub Stats" />
-  <img height="175em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=XkrulesVitor&layout=compact&langs_count=8&count_private=true&bg_color=0d1117&title_color=f79c1d&text_color=f0f6fc&border_color=30363d&hide_border=false" alt="Most Used Languages" />
-</div>
-
-<div align="center">
-  <img height="165em" src="https://streak-stats.demolab.com?user=XkrulesVitor&theme=dark&background=0D1117&border=30363D&stroke=567599&ring=F79C1D&fire=0088FF&currStreakNum=F0F6FC&sideNums=F0F6FC&currStreakLabel=38BDF8&sideLabels=8B949E&dates=8B949E" alt="GitHub Streak" />
-</div>
-
-<br/>
-
-<div align="center">
   <img src="./profile-3d-contrib/profile-night-rainbow.svg" alt="3D Contributions City" width="100%" />
 </div>
 
