@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="32" viewBox="0 0 256 32" fill="none">
+  <rect width="256" height="32" rx="6" fill="#0D1117"/>
+  <path d="M 80 0 H 250 A 6 6 0 0 1 256 6 V 26 A 6 6 0 0 1 250 32 H 80 Z" fill="#1F6FEB"/>
+  <rect x="0.5" y="0.5" width="255" height="31" rx="5.5" stroke="#30363D"/>
+  <g transform="translate(10, 7)">
+    <path fill="#38BDF8" d="M9 1L1.5 5.2v8.6L9 18l7.5-4.2V5.2L9 1zm0 2.1l5.2 2.9L9 8.9 3.8 6 9 3.1zM3.3 7.5l4.8 2.7v5.5l-4.8-2.7V7.5zm6.6 8.2v-5.5l4.8-2.7v5.5l-4.8 2.7z"/>
+  </g>
+  <text x="56.0" y="20" text-anchor="middle" fill="#F0F6FC" font-family="Segoe UI, Ubuntu, sans-serif" font-weight="700" font-size="11" letter-spacing="0.8">FOCUS</text>
+  <text x="168.0" y="20" text-anchor="middle" fill="#FFFFFF" font-family="Segoe UI, Ubuntu, sans-serif" font-weight="700" font-size="11" letter-spacing="0.8">SOFTWARE • GAMES • 3D</text>
+</svg>

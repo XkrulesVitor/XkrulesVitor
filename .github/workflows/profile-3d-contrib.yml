@@ -1,0 +1,32 @@
+name: GitHub-Profile-3D-Contrib
+
+on:
+  schedule: # Roda automaticamente todos os dias às 00:00 UTC (21:00 BRT)
+    - cron: "0 0 * * *"
+  workflow_dispatch: # Permite rodar manualmente clicando em "Run workflow" na aba Actions
+  push:
+    branches:
+      - main
+      - master
+
+permissions:
+  contents: write # Permissão essencial para que a Action salve o SVG 3D no repositório
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: generate-github-profile-3d-contrib
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: yoshi389111/github-profile-3d-contrib@latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+
+      - name: Commit & Push 3D Contribution Graph
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A .
+          git diff --cached --quiet || (git commit -m "chore: update 3D contribution graph" && git push)
